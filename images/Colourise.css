@@ -16,9 +16,10 @@
 
 body {
 	font: 11px/165% 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
-	color: #5B5B5B; 	
+	color: #5B5B5B; 
 	margin: 0; 	padding: 0; 
-	background: #070707 url(bg.jpg) no-repeat center top;
+	background: #070707 url(bg.jpg) no-repeat left top;
+        background-size: 75%;
 	text-align: center;
 }
 
@@ -43,7 +44,9 @@ h1, h2, h3 {
 h1 {
 	font-size: 3.6em;
 	font-weight: normal;
-	letter-spacing: -2px;
+	letter-spacing: 2px;
+	padding: 15px 10px 5px 10px;	
+}
 	padding: 15px 10px 5px 10px;	
 }
 h2 {
@@ -160,7 +163,7 @@ input, select, textarea {
 	border: 1px solid #1C1C1C;
 }
 textarea {
-	width: 400px;
+	width: 800px;
 	height: 100px;
 	display: block;	
 }
@@ -203,14 +206,14 @@ input.button {
 ------------------------------------------- */ 
 #wrap {
 	position: relative;
-	width: 900px;	
+	width: 1300px;	
 	margin: 0 auto;
 	text-align: left;		
 }
 #content-wrap {
 	position: relative;
 	clear: both;
-	width: 900px;	
+	width: 1200px;	
 	padding: 0; 		
 	margin-left: 5px;	
 	background: transparent;
@@ -220,7 +223,7 @@ input.button {
 }
 #header {
 	position: relative;
-	width: 900px;	
+	width: 1200px;	
 	height: 430px;	
 	margin: 0; padding: 0;		
 	background: transparent;
@@ -229,7 +232,7 @@ input.button {
 /* header search */
 #header form#quick-search {
 	position: absolute;
-	top: 38px; right: 0;
+	top: 50px; right: 0;
 	padding: 0; margin: 0;
 	border: none;
 	width: 262px; height: 30px;
@@ -255,14 +258,14 @@ input.button {
 	position: absolute;
 	margin: 0; padding: 0;		
 	height: 40px;
-	width: 900px;	
-	left: 0;	top: 35px;	
+	width: 1300px;	
+	left: 0;	top: 50px;	
 	border-bottom: 1px solid #1A1A1A;
 }
 #nav ul {
 	float: left;
 	list-style: none;
-	width: 880px;		
+	width: 1280px;		
 	height: 40px;
 	margin: 0 0 0 5px; padding: 0;	
 	display: inline;
@@ -321,7 +324,7 @@ input.button {
 /* Main Column */
 #main {
 	float: left;
-	width: 545px;
+	width: 900px;
 	padding: 0; margin: 0;
 	display: inline;		
 }
@@ -413,7 +416,7 @@ input.button {
 }
 #footer-content {	
 	margin: 0 auto;		
-	width: 880px;
+	width: 1200px;
 	text-align: left;		
 }
 #footer-content ul.col-list {
@@ -456,6 +459,11 @@ input.button {
 	padding: 0 0 30px 0;	
 	display: inline;	
 }
+#footer-content .col3 {
+	width: 285px;
+	padding: 0 0 30px 0;	
+	display: inline;	
+}
 #footer-content .space-sep {
 	margin-right: 12px;
 }
@@ -474,6 +482,7 @@ input.button {
 
 .post-info { font-size: .95em; padding-top: 3px; margin-left: 5px; color: #444;	}
 .post-info a { color: #BD4200; }
+.post-body { color: #8B0000 }
 
 /* alignment classes */
 .float-left  { float: left; }
