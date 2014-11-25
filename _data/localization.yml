@@ -1,0 +1,29 @@
+# Localization
+en:
+  site:
+    name: "Gubler's Landing"
+  pages:
+    home:
+      name: "Home"
+      url: "/home/"
+    about:
+      name: "About"
+      url: "/about/"
+    post-index:
+      name: "Posts"
+      url: "/posts/"
+pt:
+  site:
+    name: "O Lugar do Gubler"
+  pages:
+    home:
+      name: "Início"
+      url: "/inicio/"
+    about:
+      name: "Sobre"
+      url: "/sobre/"
+    post-index:
+      name: "Postagens"
+      url: "/postagens/"
+  categories:
+    spiritual: "espiritual"

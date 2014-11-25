@@ -1,0 +1,53 @@
+# Basic info
+name: Gubler's Landing
+description: This is my site!
+author: Erich Gubler
+author_email: erichdongubler@gmail.com
+url: http://erichdongubler.github.io/
+
+# Excludes
+exclude: [README.md]
+
+permalink: /:categories/:title
+gems:
+  - jekyll-redirect-from
+
+# Parsing config
+markdown: redcarpet
+redcarpet: # This WAS kramdown with GFM and hard_wrap disabled...
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+highlighter: true
+
+# Defaults for the blog content
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+# Pages
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      type: "pages"
+      path: "pages/pt"
+    values:
+      lang: "pt"
+# Posts
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+# Post languages
+  -
+    scope:
+      type: "posts"
+      path: "_posts/pt"
+    values:
+      lang: "pt"
