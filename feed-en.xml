@@ -1,5 +1,5 @@
 ---
-layout: none
+layout:
 lang: en
 ---
 {% include feed.xml %}
