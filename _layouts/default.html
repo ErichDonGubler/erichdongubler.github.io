@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-        <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/style.css" type="text/css" />
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/pygments.css" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/_resources/style.css" type="text/css" />
+        <link rel="stylesheet" href="/_resources/pygments.css" type="text/css" />
         {% for stylesheet in page.stylesheets %}
-          <link rel="stylesheet" href="{{site.baseurl}}/resources/{{stylesheet}}.css" type="text/css" />
+          <link rel="stylesheet" href="/_resources/{{stylesheet}}.css" type="text/css" />
         {% endfor %}
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css" type="text/css" />
+        <link rel="stylesheet" href="/_resources/fontello/css/fontello.css" type="text/css" />
 
         <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
         <meta name="robots" content="index, follow, noarchive" />

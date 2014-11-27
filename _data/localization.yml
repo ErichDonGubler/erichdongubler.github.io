@@ -1,7 +1,10 @@
 # Localization
 en:
+  feeds:
+    lang-name: "en-us"
   site:
     name: "Gubler's Landing"
+    description: "Erich's personal website"
   pages:
     home:
       name: "Home"
@@ -13,8 +16,11 @@ en:
       name: "Posts"
       url: "/posts/"
 pt:
+  feeds:
+    lang-name: "pt-br"
   site:
     name: "O Lugar do Gubler"
+    description: "O site pessoal do Erich"
   pages:
     home:
       name: "Início"
