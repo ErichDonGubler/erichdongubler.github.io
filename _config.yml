@@ -37,7 +37,7 @@ defaults:
   -
     scope:
       type: "pages"
-      path: "pages/pt"
+      path: "_pages/pt"
     values:
       lang: "pt"
 # Posts
