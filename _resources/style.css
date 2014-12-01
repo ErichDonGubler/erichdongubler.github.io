@@ -278,3 +278,16 @@ footer {
 	border: .2em solid #222;
 	border-radius: .2em / .2em;
 }
+
+/* Post indexes */
+table#post-index {
+	width: 100%;
+	text-align: center;
+}
+table#post-index tr.category{
+	text-align: left;
+}
+
+table#post-index tr td.date,.tags {
+	width: 30%;
+}

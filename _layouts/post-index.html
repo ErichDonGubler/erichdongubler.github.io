@@ -1,0 +1,39 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<table id="post-index">
+    {% for category in site.categories %}
+        {% assign categoryEmpty = "true" %}
+        {% if category[1] != empty %}
+            {% for post in category[1] reversed %}
+                {% if post.lang == page.lang %}
+                    {% assign categoryEmpty = "false" %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% if categoryEmpty == "false" %}
+            <tr class="category">
+                <td colspan="100">
+                    <h2>{{ category[0] }}</h2>
+                </td>
+            </tr>
+            {% for post in category[1] reversed %}
+            	{% if post.lang == page.lang %}
+    			    <tr class="item">
+                        <td class="name"><a href="{{ post.url }}">{{ post.title }}</a></td>
+    			        <td class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td> 
+    			        <td class="tags"><i class="icon-tag"></i>
+                            {% for tag in post.tags %}
+                                {{ tag }},
+                            {% endfor %}
+                        </td>
+    			    </tr>
+            	{% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</table>

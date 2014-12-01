@@ -1,10 +1,9 @@
 ---
 name: post-index
-layout: page
+
+layout: post-index
 permalink: /posts/
 
 title: Posts
 subtitle: "Here they are."
 ---
-
-{% include post_index.html %}

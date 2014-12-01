@@ -9,16 +9,14 @@ url: http://erichdongubler.github.io
 exclude: [README.md]
 include: ["_pages", "_resources", ".htaccess"]
 
-permalink: /:categories/:title
+permalink: pretty
 gems:
   - jekyll-redirect-from
 
 # Parsing config
-markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-highlighter: true
 
 # Defaults for the blog content
 defaults:
@@ -34,19 +32,20 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
-      type: "pages"
-      path: "_pages/pt"
-    values:
-      lang: "pt"
 # Posts
   -
     scope:
       type: "posts"
     values:
       layout: "post"
-# Post languages
+
+# PT (Portuguese)
+  -
+    scope:
+      type: "pages"
+      path: "_pages/pt"
+    values:
+      lang: "pt"
   -
     scope:
       type: "posts"
