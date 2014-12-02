@@ -4,13 +4,69 @@ layout: default
 
 <article id="post">
         <header id="content-header">
-            <h2 id="title">{{ page.title }}</h2>
+            <h1 id="title">{{ page.title }}</h1>
             <div id="subtitle">{{ page.subtitle }}</div>
         </header>
         <section id="content-body">{{ content }}</section>
 
         <section id="content-footer">
-        		<div id="post-footer-separator"></div>
+        		<div class="post-footer-separator"></div>
+
+        		<!-- Get the previous page -->
+    			{% assign previous_page="" %}
+
+	    		{% assign found_this_post="false" %}
+	    		{% for post in site.posts reversed %}
+	    			{% if found_this_post != "true" %}
+					    {% if post.name == page.name %}
+		    				{% assign found_this_post="true" %}
+		    				{% continue %}
+					    {% endif %}
+			    	{% else %}
+					    {% if post.name != page.name and post.lang == page.lang %}
+			    			{% assign previous_page=post %}
+			    			{% break %}
+			    		{% endif %}
+				    {% endif %}
+				{% endfor %}
+
+        		<!-- Get the next page -->
+    			{% assign next_page="" %}
+
+	    		{% assign found_this_post="false" %}
+	    		{% for post in site.posts %}
+	    			{% if found_this_post != "true" %}
+					    {% if post.name == page.name %}
+		    				{% assign found_this_post="true" %}
+		    				{% continue %}
+					    {% endif %}
+			    	{% else %}
+					    {% if post.name != page.name and post.lang == page.lang %}
+			    			{% assign next_page=post %}
+			    			{% break %}
+			    		{% endif %}
+				    {% endif %}
+				{% endfor %}
+			    {% if next_page != empty or previous_page != empty %}
+			    	<div id="other-posts">
+				    	<h2>Other Posts</h2>
+					    <table>
+					    	{% if previous_page != empty %}
+						    	<td id="previous-post">
+									<h3>{{ site.data.localization_posts.[page.lang].previous }}</h3>
+						    		<a href="{{ previous_page.url }}">{{ previous_page.title }}</a>
+							    </td>
+							{% endif %}
+					    	{% if next_page != empty %}
+						    	<td id="next-post">
+									<h3>{{ site.data.localization_posts.[page.lang].next }}</h3>
+						    		<a href="{{ next_page.url }}">{{ next_page.title }}</a>
+							    </td>
+							{% endif %}
+					    </table>
+					</div>
+        			<div class="post-footer-separator"></div>
+        		{% endif %}
 	            <div id="post-info">
 		            <span><i class="icon-clock"></i> <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time><br/><br/>
 		            <i class="icon-tag"></i> {% for category in page.categories | category_links %} {{category}} {% endfor %}
@@ -32,7 +88,7 @@ layout: default
 			    <div id="disqus_thread"></div>
 			    <script type="text/javascript">
 			        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			        var disqus_shortname = '{{ site.data.localization_disqus.[page.lang].shortlink }}'; // required: replace example with your forum shortname
+			        var disqus_shortname = '{{ site.data.localization_posts.[page.lang].disqus-shortlink }}'; // required: replace example with your forum shortname
 
 			        /* * * DON'T EDIT BELOW THIS LINE * * */
 			        (function() {

@@ -1,5 +1,13 @@
-##{{ site.data.localization_home.[page.lang].header }}
+---
+name: home
+layout: page
 
+stylesheets: [home]
+---
+
+{{content}}
+
+<h2>{{ site.data.localization_home.[page.lang].header }}</h2>
 <div id="places">
     <table id="place-table">
       <tr class="place-row">

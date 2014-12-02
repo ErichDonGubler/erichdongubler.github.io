@@ -272,11 +272,39 @@ footer {
 	width: 100%;
 }
 
-#post-footer-separator {
+.post-footer-separator {
 	height: 0px;
 	margin: 1em;
 	border: .2em solid #222;
 	border-radius: .2em / .2em;
+}
+
+#other-posts table {
+	width: 100%;
+}
+
+#other-posts h2 {
+	text-align: center;
+	padding: .25em;
+}
+
+#other-posts table td#previous-post,
+#other-posts table td#next-post {
+	width: 50%;
+}
+
+#other-posts table td#previous-post h3,
+#other-posts table td#next-post h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#other-posts table td#previous-post {
+	text-align: left;
+}
+
+#other-posts table td#next-post {
+	text-align: right;
 }
 
 /* Post indexes */
@@ -288,6 +316,7 @@ table#post-index tr.category{
 	text-align: left;
 }
 
-table#post-index tr td.date,.tags {
+table#post-index tr td.date,
+table#post-index tr td.tags {
 	width: 30%;
 }

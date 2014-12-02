@@ -1,0 +1,5 @@
+---
+layout: feed
+lang: en
+---
+{% for post in site.posts %}{{post.name}}|{% endfor %}
