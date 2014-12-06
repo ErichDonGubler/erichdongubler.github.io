@@ -31,9 +31,15 @@ body {
 	background-size: cover;
 }
 
-p, dl { padding: 1em; margin: 0; }
+p, dl { 
+	padding: .25em;
+	margin: 0;
+	line-height: 120%;
+}
 
 ul, ol { padding: 0 2.2em; }
+
+ul li, ol li { padding: .5em }
 
 /* Links */
 a, a:active, a:link {
@@ -120,18 +126,30 @@ p > code {
 p img {
 	display: block;
 	margin: auto;
+	padding: .5em 0em;
 }
 
 blockquote {
-	margin: 15px 10px;
- 	padding: 10px 10px 10px 35px;  
-   	background: #222 url(.\resources\img\quote.jpg) no-repeat 10px 10px;
+	margin: .5em;
+ 	padding: 1em;  
+   	background: #222 url(quote.png) no-repeat 1em 1em;
+	background-size: 50px;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 1.6em;
+	line-height: 150%;
 	font-style: italic;
 	font-family: Georgia, 'Times New Roman', Times, serif;	
 	color: #808080;	
+}
+
+blockquote .blockquote_source:before {
+	content: "\2014";
+}
+
+blockquote .blockquote_source {
+	font-style: normal;
+	white-space: pre;
+	text-align: right;
 }
 
 /* Footer */
@@ -173,7 +191,7 @@ footer {
 	min-height: 100%;
 	width: 900px;	
 	margin: 0 auto 2em;
-	padding: 2em 1em;
+	padding: 2em 1em 0em;
 	text-align: left;
 	background-color: rgba(0,0,0,0.5);		
 }
@@ -189,6 +207,10 @@ footer {
 
 #content-header {
 	background-color: #222;
+}
+
+#content-body {
+	padding: 1em 1em 0em;
 }
 
 /*  Navigation  */
@@ -220,7 +242,6 @@ footer {
 }
 
 #nav-content ul li#home a {
-	display: inline;
 	color: #FFF;
 }
 
@@ -242,11 +263,10 @@ footer {
 }
 
 	/* Localization */
-#lang {
-	float: right;
-}
 
 #lang {
+	float: right;
+	padding: 0 1em 0 0;
 	list-style: none;
 	display: inline;
 }
@@ -284,8 +304,9 @@ footer {
 }
 
 #other-posts h2 {
+	font-style: normal;
 	text-align: center;
-	padding: .25em;
+	padding: 0em 2em;
 }
 
 #other-posts table td#previous-post,

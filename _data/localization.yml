@@ -15,6 +15,7 @@ en:
     post-index:
       name: "Posts"
       url: "/posts/"
+  hosting: "Proudly hosted by"
 pt:
   feeds:
     lang-name: "pt-br"
@@ -33,3 +34,4 @@ pt:
       url: "/postagens/"
   categories:
     spiritual: "espiritual"
+  hosting: "Hospedado com orgulho por"

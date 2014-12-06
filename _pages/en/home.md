@@ -1,4 +1,6 @@
 ---
+name: home
+
 layout: pages/home
 permalink: /home/
 
@@ -7,5 +9,5 @@ subtitle: "This is my personal website. Feel free to browse around! See the link
 
 redirect_from: "/index.html"
 ---
-> It is tact that is golden, not silence. And silence is not always tact.
-> - Samuel Butler
+<blockquote>It is tact that is golden, not silence. And silence is not always tact.
+<div class="blockquote_source">Samuel Butler</div></blockquote>

@@ -16,7 +16,7 @@ layout: default
     			{% assign previous_page="" %}
 
 	    		{% assign found_this_post="false" %}
-	    		{% for post in site.posts reversed %}
+	    		{% for post in site.posts %}
 	    			{% if found_this_post != "true" %}
 					    {% if post.name == page.name %}
 		    				{% assign found_this_post="true" %}
@@ -34,7 +34,7 @@ layout: default
     			{% assign next_page="" %}
 
 	    		{% assign found_this_post="false" %}
-	    		{% for post in site.posts %}
+	    		{% for post in site.posts reversed %}
 	    			{% if found_this_post != "true" %}
 					    {% if post.name == page.name %}
 		    				{% assign found_this_post="true" %}
@@ -49,7 +49,7 @@ layout: default
 				{% endfor %}
 			    {% if next_page != empty or previous_page != empty %}
 			    	<div id="other-posts">
-				    	<h2>Other Posts</h2>
+				    	<h2>{{ site.data.localization_posts.[page.lang].other-posts }}</h2>
 					    <table>
 					    	{% if previous_page != empty %}
 						    	<td id="previous-post">
