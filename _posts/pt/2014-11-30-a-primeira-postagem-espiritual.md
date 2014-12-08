@@ -4,7 +4,7 @@ name: "first-spiritual"
 lang: pt
 
 tags: ["core documents", "obedience", "Thanksgiving", "family", "faith"]
-categories: espiritual
+category: espiritual
 
 title: "A Primeira Postagem Espiritual!"
 subtitle: "Criado com meu novo blog!"

@@ -15,6 +15,9 @@ en:
     post-index:
       name: "Posts"
       url: "/posts/"
+  categories:
+    blogging: "Blogging"
+    spiritual: "Spiritual"
   hosting: "Proudly hosted by"
 pt:
   feeds:
@@ -33,5 +36,6 @@ pt:
       name: "Postagens"
       url: "/postagens/"
   categories:
-    spiritual: "espiritual"
+    blogueação: "Blogueação"
+    espiritual: "Espiritual"
   hosting: "Hospedado com orgulho por"

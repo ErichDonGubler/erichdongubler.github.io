@@ -1,7 +1,7 @@
 ---
 name: "first-spiritual"
 
-category: [spiritual]
+category: spiritual
 tags: ["core documents", "obedience", "Thanksgiving", "family", "faith"]
 
 title: "The First Spiritual Post!"

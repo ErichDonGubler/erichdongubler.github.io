@@ -1,7 +1,7 @@
 ---
 name: "why-blog-switched"
 
-categories: blogging
+category: blogging
 
 subtitle: "Composition vs. Typing"
 ---
