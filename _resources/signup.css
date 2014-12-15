@@ -1,0 +1,55 @@
+#signup_feed {
+	padding: 0 2em;
+}
+
+#signup_email {
+	padding: 0 2em;
+}
+
+#mc_embed_signup {
+	background-color: #222;
+	margin: .5em auto .5em auto;
+	padding: 1em;
+	text-align: center;
+}
+
+#mc_embed_signup div.mc-field-group {
+	margin: 1em 0;
+	width: 100%;
+	text-align: left;
+}
+
+#mc_embed_signup div.mc-field-group label {
+	margin: .5em;
+}
+
+input[type="text"], input[type="email"] {
+	margin: .5em 0;
+	width: 95%;
+	display: block;
+	padding: .5em;
+	border-radius: .5em;
+
+}
+
+input.button {
+	margin: 0 auto;
+	border: 1em;
+	border-radius: .5em;
+	padding: .5em;
+	width: 20%;
+	text-align: center;
+}
+
+input.button:hover {
+	background: #999;
+}
+
+.indicates-required {
+	color: #555;
+	text-align: right;
+}
+
+.asterisk {
+	color: orange;
+}

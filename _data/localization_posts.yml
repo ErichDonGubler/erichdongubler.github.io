@@ -3,8 +3,18 @@ en:
   next: "Next"
   previous: "Previous"
   disqus-shortlink: gublerslanding
+  mailchimp-signup:
+    submit-link: "//github.us9.list-manage.com/subscribe/post?u=b7f888f6f5ea5de38aeb0b996&amp;id=138546afa3"
+    first-name: "First name"
+    last-name: "Last name"
+    email: "Email address"
 pt:
   other-posts: "Outras Postagens"
   next: "Postagem mais recente"
   previous: "Postagem mais antiga"
   disqus-shortlink: olugardogubler
+  mailchimp-signup:
+    submit-link: "//github.us9.list-manage.com/subscribe/post?u=b7f888f6f5ea5de38aeb0b996&amp;id=ec808ade9b"
+    first-name: "Primeiro nome"
+    last-name: "Sobrenome"
+    email: "Endereço de e-mail"
