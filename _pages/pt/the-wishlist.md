@@ -1,7 +1,7 @@
 ---
 layout: page
 name: wishlists
-permalink: "/wishlist/"
+permalink: "/lista-de-desejos/"
 
 title: "A Lista de Desejos"
 subtitle: "Caso precise saber. ;)"
