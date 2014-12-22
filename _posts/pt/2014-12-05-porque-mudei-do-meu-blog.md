@@ -1,7 +1,7 @@
 ---
 name: "why-blog-switched"
 
-category: blogueação
+category: blogueacao
 
 title: "Porque Mudei do Meu Blog"
 subtitle: "Composição vs. Digitação"
