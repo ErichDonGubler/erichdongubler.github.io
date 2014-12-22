@@ -53,14 +53,14 @@ layout: default
 					    <table>
 					    	{% if previous_page != empty %}
 						    	<td id="previous-post">
-									<h3>{{ site.data.localization_posts.[page.lang].previous }}</h3>
-						    		<a href="{{ previous_page.url }}">{{ previous_page.title }}</a>
+									<h3><a href="{{ previous_page.url }}">&#8666;{{ previous_page.title }}</a></h3>
+						    		
 							    </td>
 							{% endif %}
 					    	{% if next_page != empty %}
 						    	<td id="next-post">
-									<h3>{{ site.data.localization_posts.[page.lang].next }}</h3>
-						    		<a href="{{ next_page.url }}">{{ next_page.title }}</a>
+									<h3><a href="{{ next_page.url }}">{{ next_page.title }}&#8667;</a></h3>
+						    		
 							    </td>
 							{% endif %}
 					    </table>

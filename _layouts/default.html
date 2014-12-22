@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.data.localization.[page.lang].site.name }}</title>
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="/_resources/style.css" type="text/css" />
         <link rel="stylesheet" href="/_resources/pygments.css" type="text/css" />
