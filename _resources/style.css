@@ -41,6 +41,8 @@ ul, ol { padding: 0 2.2em; }
 
 ul li, ol li { padding: .5em }
 
+ul li p, ol li p { padding: .5em 0;}
+
 /* Links */
 a, a:active, a:link {
 	text-decoration: none;
@@ -127,6 +129,7 @@ p img {
 	display: block;
 	margin: auto;
 	padding: .5em 0em;
+	max-width: 100%;
 }
 
 iframe { /* Almost certainly a video/media embed */
