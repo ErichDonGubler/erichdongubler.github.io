@@ -9,7 +9,7 @@ This last week has been an interesting one of reflection, where I've had some ti
 
 ##The Theme of People
 
-When I think of this year, I think of you dear friends and members of my family. It's been exactly a month and a week since I made the return trip home from my mission to Brazil, and had to make an adjustment of similar magnitude to when I left. It has been you who have helped me to find lasting value in what I now do as a return missionary! My full-time mission may have ended, but the people from before, during, and after remain, and still have their whole lives to spend along with me.
+When I think of this year, I think of you dear friends and members of my family. It's been exactly a year and a week since I made the return trip home from my mission to Brazil, and had to make an adjustment of similar magnitude to when I left. It has been you who have helped me to find lasting value in what I now do as a return missionary! My full-time mission may have ended, but the people from before, during, and after remain, and still have their whole lives to spend along with me.
 
 This year, I was able to learn about what is important.
 

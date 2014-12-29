@@ -8,7 +8,7 @@ A semana passada foi uma interessante de reflexão, onde eu pude passar algum te
 
 ## O Tema das Pessoas
 
-Quando eu penso neste ano, penso em vocês, queridos amigos e membros da minha família. Faz exatamente um mês e uma semana desde que fiz a viagem de volta para casa da minha missão no Brasil, e tive que fazer um ajuste de magnitude semelhante a quando eu saí para servir. São vocês que têm me ajudado a encontrar um valor duradouro no que eu faço agora como missionário retornado! Talvez a minha missão de tempo integral tenha terminado, mas as pessoas de antes, durante e depois permanecem, e ainda tem a vida inteira para passarem juntas comigo.
+Quando eu penso neste ano, penso em vocês, queridos amigos e membros da minha família. Faz exatamente um ano e uma semana desde que fiz a viagem de volta para casa da minha missão no Brasil, e tive que fazer um ajuste de magnitude semelhante a quando eu saí para servir. São vocês que têm me ajudado a encontrar um valor duradouro no que eu faço agora como missionário retornado! Talvez a minha missão de tempo integral tenha terminado, mas as pessoas de antes, durante e depois permanecem, e ainda tem a vida inteira para passarem juntas comigo.
 
 Este ano, eu pude aprender sobre o que é importante.
 
