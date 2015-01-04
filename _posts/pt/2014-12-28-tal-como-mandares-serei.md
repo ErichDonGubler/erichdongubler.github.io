@@ -12,7 +12,7 @@ Quando eu penso neste ano, penso em vocês, queridos amigos e membros da minha f
 
 Este ano, eu pude aprender sobre o que é importante.
 
-Em [1 Timóteo 6](https://www.biblegateway.com/passage/?search=1+Tim%C3%B3teo+6&version=acrescentada), nos é ensinado do que *não* é importante. Aprendemos dos servos empregados por senhores que crêem no evangelho e por aqueles que não crêem; estes últimos são descritos nos versículos 4-5:
+Em [1 Timóteo 6](https://www.biblegateway.com/passage/?search=1+Tim%C3%B3teo+6&version=ARC), nos é ensinado do que *não* é importante. Aprendemos dos servos empregados por senhores que crêem no evangelho e por aqueles que não crêem; estes últimos são descritos nos versículos 4-5:
 
 > [É] soberbo e nada sabe, mas delira acerca de questões e contendas de palavras, das quais nascem invejas, porfias, blasfêmias, ruins suspeitas (...) cuidando que a piedade seja causa de ganho. Aparta-te dos tais.
 
