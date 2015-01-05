@@ -5,7 +5,7 @@ category: espiritual
 
 title: "As Dádivas Dele São Muitas"
 ---
-Não teve muita coisa que vieram à mente quando pensei nesta postagem semanal, que é estranha - normalmente tenho que pensar em que preciso *omitir* quando eu escrevo uma postagem.
+Não teve muita coisa que veio à mente quando pensei nesta postagem semanal, que é estranha - normalmente tenho que pensar em que preciso *omitir* quando eu escrevo uma postagem.
 
 Tem algumas coisas, porém, que acho que posso compartilhar. A primeira é a nova iniciativa ["Ele É o Presente"](http://www.mormon.org.br/natal) pela Igreja SUD, que a minha mãe compartilhou comigo e achei maravilhoso:
 
