@@ -1,5 +1,5 @@
 table#place-table {
-	width: 700px;
+	width: 445px;
 	text-align: center;
 	margin: 2em auto;
 }
@@ -9,35 +9,34 @@ table#place-table  tr.place-row {
 }
 
 table#place-table  tr.place-row-spacer {
-	height: 100px;
+	height: 10px;
 	background-color: transparent;
 }
 
 table#place-table td.place-cell {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background-color: #333;
-	border-width: 50px;
-	border-radius: 25px;
+	border-width: 10px;
+	border-radius: 5px;
 }
 
 table#place-table td.place-cell:hover {
-	width: 300px;
-	height: 300px;
 	background-color: #777;
-	border-width: 50px;
-	border-radius: 25px;
 }
 
 table#place-table td img {
-	max-width: 250px;
-	height: auto;
+	display: block;
+	max-width: 80px;
+	padding: 10px;
 	vertical-align: middle;
 }
 
-
+table#place-table a {
+	display: block;
+}
 
 table#place-table td.place-column-spacer {
-	width: 100px;
+	width: 10px;
 	background-color: transparent;
 }
