@@ -1,6 +1,6 @@
 en:
-    header: "Where can you find Gubler?"
-    projects: "See my latest projects!"
+    latest-posts: "Latest Posts"
+    more-posts: "See more posts"
 pt:
-    header: "Onde você pode encontrar o Gubler?"
-    projects: "Veja os meus projetos atuais!"
+    latest-posts: "Postagens Mais Recentes"
+    more-posts: "Ver mais postagens"

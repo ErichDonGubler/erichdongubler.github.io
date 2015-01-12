@@ -1,18 +1,3 @@
-#signup_feed {
-	padding: 0 2em;
-}
-
-#signup_email {
-	padding: 0 2em;
-}
-
-#mc_embed_signup {
-	background-color: #222;
-	margin: .5em auto .5em auto;
-	padding: 1em;
-	text-align: center;
-}
-
 #mc_embed_signup div.mc-field-group {
 	margin: 1em 0;
 	width: 100%;
@@ -46,8 +31,9 @@ input.button:hover {
 }
 
 .indicates-required {
-	color: #555;
-	text-align: right;
+	text-align: center;
+	margin: .5em;
+	padding-top: .5em;
 }
 
 .asterisk {
