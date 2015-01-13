@@ -1,16 +1,3 @@
-/* ----------------------------------------------
-	Template Name : Colourise
-	Template Code : S-0022
-	Version : 1.1   
-	Author : Erwin Aligam, edited by Erich Gubler
-	Author URI : http://www.styleshout.com/       
-	Last Date Modified :  January 17, 2010
- ------------------------------------------------ */
- 
-/* ----------------------------------------------
-   HTML ELEMENTS
-------------------------------------------------- */ 
-
 /* Top Elements */
 * {
 	margin: 0;
@@ -75,6 +62,7 @@ h3 {
 
 header #title,#subtitle {
 	text-align: center;
+	padding: .25em;
 }
 
 header #subtitle {
@@ -148,6 +136,7 @@ blockquote {
 	font-style: italic;
 	font-family: Georgia, 'Times New Roman', Times, serif;	
 	color: #808080;	
+	box-shadow: .25em .25em .25em #000;
 }
 
 blockquote .blockquote_source:before {
@@ -195,37 +184,6 @@ footer {
 /* ------------------------------------------
    LAYOUT
 ------------------------------------------- */ 
-#wrap {
-	min-height: 100%;
-	width: 900px;	
-	margin: 0 auto;
-	padding: 0 1em 0;
-	text-align: left;
-	background-color: #111;		
-}
-#content-wrap {
-	position: relative;
-	clear: both;
-	padding: 2em; 		
-	margin-left: 5px;	
-	background: transparent;
-	float: left;	
-	display: inline;
-}
-
-#content-header {
-	background-color: #222;
-}
-
-#content-body {
-	padding: 1em;
-}
-
-#content-footer {
-	background-color: #222;
-	padding: 1em;
-}
-
 /*  Navigation  */
 
 	/* Automagically-generated pages */
@@ -235,6 +193,8 @@ footer {
 	background-color: #222;
 	text-align: left;
 	padding: .8em .5em .8em;
+	box-shadow: .25em .25em .25em #000;
+	position: relative;
 }
 
 #nav-content {
@@ -292,6 +252,41 @@ footer {
 	color: #FFF;	
 }
 
+#wrap {
+	min-height: 100%;
+	width: 900px;	
+	margin: 0 auto 0;
+	padding: 0 1em 0;
+	text-align: left;
+	background-color: #111;		
+}
+#content-wrap {
+	position: relative;
+	clear: both;
+	padding: 2em; 		
+	margin-left: 5px;	
+	background: transparent;
+	float: left;	
+	display: inline;
+}
+
+#content-header {
+	background-color: #222;
+	position: relative;
+	z-index: 2;
+	box-shadow: .5em .5em .25em #000;
+}
+
+#content-body {
+	padding: 1em;
+}
+
+#content-footer {
+	background-color: #222;
+	padding: 1em;
+	box-shadow: .5em .5em .25em #000;
+}
+
 /* Inner page content */
 
 	/* Refboxes TODO: What SHOULD these be called, anyway?*/
@@ -300,11 +295,13 @@ footer {
 	padding: 1em;
 	background-color: #333;
 	text-align: center;
+	box-shadow: .25em .25em .25em #000;
 }
 
 .refbox-header {
 	padding: .5em;
 	background-color: #222;
+	box-shadow: .125em .125em .25em #111;
 }
 
 .refbox-content {
@@ -354,4 +351,10 @@ table#place-table a {
 table#place-table td.place-column-spacer {
 	width: 10px;
 	background-color: transparent;
+}
+
+/* Material Design styles */
+
+.shadowed {
+	box-shadow: .25em .25em .25em #111
 }
