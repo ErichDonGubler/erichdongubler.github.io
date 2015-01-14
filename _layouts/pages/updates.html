@@ -1,21 +1,34 @@
+---
+layout: page
+
+stylesheets: [updates]
+---
+{{content}}
+<div id="signup_feed" class="refbox">
+	<h3 class="refbox-header">{{site.data.localization_updates.[page.lang].feed-signup.header}}</h3>
+	<div class="refbox-content">{{site.data.localization_updates.[page.lang].feed-signup.instructions}}</div>
+</div>
+
+<div id="signup_email" class="refbox">
+	<h3 class="refbox-header">{{site.data.localization_updates.[page.lang].email-signup.header}}</h3>
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="{{ site.data.localization_posts.[page.lang].mailchimp-signup.submit-link }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="{{ site.data.localization_posts.[page.lang].email-signup.submit-link }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">{{ site.data.localization_posts.[page.lang].mailchimp-signup.email }}  <span class="asterisk">*</span>
+	<label for="mce-EMAIL">{{ site.data.localization_posts.[page.lang].email-signup.email }}  <span class="asterisk">*</span>
 </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">{{ site.data.localization_posts.[page.lang].mailchimp-signup.first-name }}  <span class="asterisk">*</span>
+	<label for="mce-FNAME">{{ site.data.localization_posts.[page.lang].email-signup.first-name }}  <span class="asterisk">*</span>
 </label>
 	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-LNAME">{{ site.data.localization_posts.[page.lang].mailchimp-signup.last-name }} </label>
+	<label for="mce-LNAME">{{ site.data.localization_posts.[page.lang].email-signup.last-name }} </label>
 	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
 </div>
 	<div id="mce-responses" class="clear">
@@ -31,3 +44,4 @@
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 <!--End mc_embed_signup-->
+</div>

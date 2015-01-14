@@ -6,6 +6,30 @@ stylesheets: [post-index]
 
 {{ content }}
 
+{% assign MAX_LATEST_POSTS = 5 %}
+{% assign counter = "" %}
+<div id="latest-posts">
+    <h2>{{site.data.localization_post-index.[page.lang].latest-posts}}</h2>
+    {% for post in site.posts %}
+        {% if post.lang == page.lang %}
+            {% capture counter %}{{ counter | append:'.' }}{% endcapture %}
+            <div class="refbox">
+                <div class="refbox-header">
+                    <h3 class="refbox-header-title">{{ post.title }}</h3>
+                    <div class="refbox-subtitle">{{ post.subtitle }}</div>
+                    <div class="refbox-header-details"><i class="icon-clock">{{ post.date | date: "%a, %d %b %Y" }}</i></div>
+                </div>
+                <div class="refbox-content">{{ post.excerpt | strip_html }}...</div>
+                <div class="latest-posts-item-link"><a href="{{post.url}}">Continue reading&raquo;</a></div>
+            </div>
+        {% endif %}
+        {% if counter.size == MAX_LATEST_POSTS %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+<h2>{{site.data.localization_post-index.[page.lang].post-list}}</h2>
 <table id="post-index">
     {% for category in site.categories reversed %}
         {% assign categoryEmpty = "true" %}
@@ -18,35 +42,39 @@ stylesheets: [post-index]
         {% endif %}
 
         {% if categoryEmpty == "false" %}
-            {% assign categoryString=category[0]%}
-            <tr class="category">
-                <td colspan="100">
+            <div class="refbox">
+                {% assign categoryString=category[0]%}
+                <h3 class="refbox-header post-index-category">
                     {% if site.data.localization.[page.lang].categories.[categoryString] %}
-                        <h2>{{ site.data.localization.[page.lang].categories.[categoryString] }}</h2>
+                        {{ site.data.localization.[page.lang].categories.[categoryString] }}
                     {% else %}
-                        <h2>{{ categoryString }}</h2>
+                        {{ categoryString }}
                     {% endif %}
-                </td>
-            </tr>
-            {% for post in category[1] reversed %}
-            	{% if post.lang == page.lang %}
-    			    <tr class="item">
-                        <td class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></td>
-                        <td class="name"><a href="{{ post.url }}">{{ post.title }}</a></td>
-                        <!-- This is UGLY. Let's put this in when we figure out how to make it useful AND pretty.
-                        {% if post.tags != empty %}
-        			        <td class="tags"><i class="icon-tag" style="float: left;"></i>
-                                <div style="text-align: left;">
-                                    {% for tag in post.tags %}
-                                        {{ tag }}, 
-                                    {% endfor %}
-                                </div>
-                            </td>
-                        {% endif %}
-                        -->
-    			    </tr>
-            	{% endif %}
-            {% endfor %}
+                </h3>
+                <div class="refbox-content post-index-category-items">
+                    <ul>
+                        {% for post in category[1] reversed %}
+                            {% if post.lang == page.lang %}
+                                <li class="post-index-category-items-entry">
+                                    <span class=""><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </li>
+                                <!-- This is UGLY. Let's put this in when we figure out how to make it useful AND pretty.
+                                {% if post.tags != empty %}
+                                    <td class="tags"><i class="icon-tag" style="float: left;"></i>
+                                        <div style="text-align: left;">
+                                            {% for tag in post.tags %}
+                                                {{ tag }}, 
+                                            {% endfor %}
+                                        </div>
+                                    </td>
+                                {% endif %}
+                                -->
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         {% endif %}
     {% endfor %}
 </table>

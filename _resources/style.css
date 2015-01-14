@@ -5,6 +5,10 @@
 	outline: 0;
 }
 
+html {
+	background: #000;
+}
+
 body {
 	font: 15px 'Georgia', Serif;
 	color: #aeaeae; 
@@ -136,7 +140,7 @@ blockquote {
 	font-style: italic;
 	font-family: Georgia, 'Times New Roman', Times, serif;	
 	color: #808080;	
-	box-shadow: .25em .25em .25em #000;
+	box-shadow: 0 0 1em rgba(0,0,0,50);
 }
 
 blockquote .blockquote_source:before {
@@ -154,9 +158,7 @@ blockquote .blockquote_source {
 footer {
 	height: 155px;
 	text-align: center;
-	padding: .8em .5em .8em;
-	width: 100%;
-	background-color: #222;
+	padding: 2em .5em;
 }
 
 
@@ -193,7 +195,6 @@ footer {
 	background-color: #222;
 	text-align: left;
 	padding: .8em .5em .8em;
-	box-shadow: .25em .25em .25em #000;
 	position: relative;
 }
 
@@ -255,8 +256,8 @@ footer {
 #wrap {
 	min-height: 100%;
 	width: 900px;	
-	margin: 0 auto 0;
-	padding: 0 1em 0;
+	margin: 1em auto 0;
+	padding: 2em 1em;
 	text-align: left;
 	background-color: #111;		
 }
@@ -274,38 +275,42 @@ footer {
 	background-color: #222;
 	position: relative;
 	z-index: 2;
-	box-shadow: .5em .5em .25em #000;
+	box-shadow: 0 0 1em rgba(0,0,0,50);
 }
 
 #content-body {
 	padding: 1em;
 }
 
-#content-footer {
-	background-color: #222;
-	padding: 1em;
-	box-shadow: .5em .5em .25em #000;
-}
-
 /* Inner page content */
 
 	/* Refboxes TODO: What SHOULD these be called, anyway?*/
 .refbox {
-	margin: .5em;
+	margin: 1em .5em;
 	padding: 1em;
 	background-color: #333;
 	text-align: center;
-	box-shadow: .25em .25em .25em #000;
+	box-shadow: 0 0 .5em rgba(0,0,0,50);
 }
 
 .refbox-header {
 	padding: .5em;
 	background-color: #222;
-	box-shadow: .125em .125em .25em #111;
+	box-shadow: 0 0 .25em rgba(0,0,0,50);
+	margin: 0 0 .5em;
+}
+
+.refbox-header-title {
+	padding: .25em;
+}
+
+.refbox-header-details {
+	margin: .5em;
+	color: #666;
 }
 
 .refbox-content {
-	margin: .5em;
+	padding: 1em .5em;
 	text-align: left;
 }
 
@@ -351,10 +356,4 @@ table#place-table a {
 table#place-table td.place-column-spacer {
 	width: 10px;
 	background-color: transparent;
-}
-
-/* Material Design styles */
-
-.shadowed {
-	box-shadow: .25em .25em .25em #111
 }

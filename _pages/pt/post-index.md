@@ -7,3 +7,7 @@ permalink: /postagens/
 title: Postagens
 subtitle: "Ei-las aqui!"
 ---
+
+##Receber Atualizações
+
+Pode-se inscrever para receber atualizações do site [aqui](/atualizacoes/).

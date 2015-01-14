@@ -1,0 +1,20 @@
+en:
+  feed-signup:
+    header: "Subscribe via feed (RSS, Atom, etc.)"
+    instructions: "Use <a href=\"/feeds/feed-en.xml\">this link</a> and put it into your favorite feed application."
+  email-signup:
+    header: "Subscribe via email"
+    submit-link: "//github.us9.list-manage.com/subscribe/post?u=b7f888f6f5ea5de38aeb0b996&amp;id=138546afa3"
+    first-name: "First name"
+    last-name: "Last name"
+    email: "Email address"
+pt:
+  feed-signup:
+    header: "Inscreva-se por feed (RSS, Atom, etc.)"
+    instructions: "Use <a href=\"/feeds/feed-pt.xml\">este link</a> com sua aplicação de feed preferida."
+  email-signup:
+    header: "Inscreva-se por email"
+    submit-link: "//github.us9.list-manage.com/subscribe/post?u=b7f888f6f5ea5de38aeb0b996&amp;id=ec808ade9b"
+    first-name: "Primeiro nome"
+    last-name: "Sobrenome"
+    email: "Endereço de e-mail"

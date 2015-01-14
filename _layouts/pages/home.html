@@ -4,29 +4,3 @@ layout: page
 stylesheets: [home]
 ---
 {{content}}
-
-{% assign MAX_LATEST_POSTS = 2 %}
-{% assign counter = "" %}
-<div id="latest-posts">
-    <h2 id="latest-posts-title">{{site.data.localization_home.[page.lang].latest-posts}}</h2>
-    {% for post in site.posts %}
-        {% if post.lang == page.lang %}
-            {% capture counter %}{{ counter | append:'.' }}{% endcapture %}
-            <div class="latest-posts-item refbox">
-                <div class="latest-posts-item-header refbox-header">
-                    <h3 class="latest-posts-item-header-title">{{ post.title }}</h3>
-                    <div class="latest-posts-item-header-subtitle">{{ post.subtitle }}</div>
-                    <div class="latest-posts-item-header-date"><i class="icon-clock">{{ post.date | date: "%a, %d %b %Y" }}</i></div>
-                </div>
-                <div class="latest-posts-item-content refbox-content">{{ post.excerpt | strip_html }}...</div>
-                <div class="latest-posts-item-link"><a href="{{post.url}}">Continue reading&raquo;</a></div>
-            </div>
-        {% endif %}
-        {% if counter.size == MAX_LATEST_POSTS %}
-            {% break %}
-        {% endif %}
-        <div id="latest-posts-separator"></div>
-    {% endfor %}
-
-    <div id="latest-posts-more"><a href="{{site.data.localization.[page.lang].pages.post-index.url}}">{{site.data.localization_home.[page.lang].more-posts}}&raquo;</a></div>
-</div>

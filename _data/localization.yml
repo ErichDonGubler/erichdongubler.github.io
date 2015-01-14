@@ -15,9 +15,6 @@ en:
     post-index:
       name: "Posts"
       url: "/posts/"
-    updates: 
-      name: "Updates"
-      url: "/updates/"
   categories:
     blogging: "Blogging"
     spiritual: "Spiritual"
@@ -38,9 +35,6 @@ pt:
     post-index:
       name: "Postagens"
       url: "/postagens/"
-    updates: 
-      name: "Atualizações"
-      url: "/atualizacoes/"
   categories:
     blogueacao: "Blogueação"
     espiritual: "Espiritual"
