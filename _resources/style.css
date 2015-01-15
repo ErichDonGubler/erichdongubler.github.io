@@ -120,7 +120,7 @@ p > code {
 p img {
 	display: block;
 	margin: auto;
-	padding: .5em 0em;
+	box-shadow: 0 0 1em rgba(0,0,0,50);
 	max-width: 100%;
 }
 
