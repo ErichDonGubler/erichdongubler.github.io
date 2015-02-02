@@ -8,6 +8,6 @@ title: Posts
 subtitle: "Here they are!"
 ---
 
-##Receiving Updates
+## Receiving Updates
 
 You can sign up for notification of site updates [here](/updates/).
