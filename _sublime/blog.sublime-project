@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".."
+		}
+	],
+	"build-systems":
+	[
+		{
+	        "name": "Run Jekyll",
+	        "working_dir": "$project_path",
+	        "cmd": "gnome-terminal -e jekyll serve",
+	        "windows":
+	        {
+	            "cmd": "C:\\Program Files (x86)\\Git\\bin\\bash.exe -c jekyll serve"
+	        }
+		}
+	]
+}
