@@ -10,3 +10,11 @@ subtitle: "This is my personal website. Feel free to browse around! See the link
 redirect_from: "/index.html"
 ---
 asdf
+
+{% highlight ruby %}
+def foo
+  puts "foo"
+end
+{% endhighlight %}
+
+blarg
