@@ -7,7 +7,7 @@ subtitle: "Reflections from 2014"
 ---
 This last week has been an interesting one of reflection, where I've had some time to myself to recover from LASIK surgery and write in my journal. It's been quite the year! And it's been very interesting to think of goals for the next one. [I've done better than I ever have academically](http://i.imgur.com/Fo6TLDI.png), and had the opportunity to do some very interesting research and decision-making. This was simultaneously scary and thrilling! The callings I've had in the Church, both for teaching and for music, have taught me a lot. The friends I've made and the dates I've gone on have helped me to further understand what kind of people I need to surround myself with, and where I need to do better.
 
-##The Theme of People
+## The Theme of People
 
 When I think of this year, I think of you dear friends and members of my family. It's been exactly a year and a week since I made the return trip home from my mission to Brazil, and had to make an adjustment of similar magnitude to when I left. It has been you who have helped me to find lasting value in what I now do as a return missionary! My full-time mission may have ended, but the people from before, during, and after remain, and still have their whole lives to spend along with me.
 
@@ -25,7 +25,7 @@ By now, some of you may already have guessed what the most important things in l
 
 A good summary of what I've learned could be expressed in the form of the title of E. Ballard's October 2005 General Conference talk called ["What Matters Most Is What Lasts Longest"](https://www.lds.org/general-conference/2005/10/what-matters-most-is-what-lasts-longest?lang=eng). It's a wonderful talk, and I'd recommend you read it. It talks about people! It talks about those closest to us, almost exclusively about family. But that's a different direction that I will go here - there are other things I've studied recently that I would like to share, and then close.
 
-##Going, Doing, and Being
+## Going, Doing, and Being
 
 Another big theme I've learned this year actually comes from the beautiful, inspired hymn called "I'll Go Where You Want Me to Go". Let's look at the lyrics (emphasis added by myself):
 
@@ -78,7 +78,7 @@ I noticed that this song teaches about three basic patterns of choosing the righ
 
     Being is what Heavenly Father always intended for you in the end.
 
-##Conclusion: Excited for 2015!
+## Conclusion: Excited for 2015!
 
 There are so many other things I've learned this last year, and I hope that as time goes on I will only be able to share more of them with you. I'm grateful for you loyal readers, and for you missionaries who always make writing these posts worthwhile. I have become a different, better person because of your influence, which passes on to me what Heavenly Father wants me to be. I don't know what He will need me to be for 2015, and what changes also await me...but I'm sure that they will be for my good, and so that I will be able to serve better and to love Him in greater degree.
 
