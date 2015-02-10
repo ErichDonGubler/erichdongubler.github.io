@@ -9,11 +9,3 @@ subtitle: "This is my personal website. Feel free to browse around! See the link
 
 redirect_from: "/index.html"
 ---
-{% highlight d linenos %}
-import std.stdio;
-
-void main()
-{
-    writeln("Hello world!");
-}
-{% endhighlight %}

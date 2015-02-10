@@ -14,8 +14,6 @@ gems:
   - jekyll-redirect-from
 
 # Parsing config
-highlighter: pygments
-markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
