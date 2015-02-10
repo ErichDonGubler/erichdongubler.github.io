@@ -8,6 +8,6 @@ title: Postagens
 subtitle: "Ei-las aqui!"
 ---
 
-##Receber Atualizações
+## Receber Atualizações
 
 Pode-se inscrever para receber atualizações do site [aqui](/atualizacoes/).

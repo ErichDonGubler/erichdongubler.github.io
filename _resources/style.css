@@ -48,10 +48,11 @@ a:hover {
 }
 
 /* headers */
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Georgia', Serif;
 	color: #bc0000;
 	padding: 1em 0 .25em 0;	
+	text-shadow: 2px 2px black;
 }
 h1 {
 	font-size: 3.6em; 
@@ -67,10 +68,12 @@ h3 {
 header #title,#subtitle {
 	text-align: center;
 	padding: .25em;
+	position: relative;
+	top: 20%;
 }
 
 header #subtitle {
-	padding: 0 0 2em 0;	
+	padding: 0 0 2em 0;
 }
 
 /* header search */
@@ -272,10 +275,12 @@ footer {
 }
 
 #content-header {
-	background-color: #222;
-	position: relative;
-	z-index: 2;
-	box-shadow: 0 0 1em rgba(0,0,0,50);
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(./square_wallpaper_pattern_bw.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	/* height: 200px; */
+	background-size: cover;
+	padding: 2em 0;
 }
 
 #content-body {
