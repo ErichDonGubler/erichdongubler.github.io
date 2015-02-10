@@ -1,8 +1,9 @@
 #post-info {
 	text-align: center;
-	width: 100%;
+	width: auto;
 	color: #666;
 	font-style: italic;
+	margin: .5em;
 }
 
 #other-posts table {
@@ -22,9 +23,10 @@
 
 #other-posts table td#previous-post {
 	text-align: center;
-	padding: .5em;
+	padding: 1em;
 }
 
 #other-posts table td#next-post {
 	text-align: center;
+	padding: 1em;
 }

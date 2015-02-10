@@ -30,7 +30,7 @@ p, dl {
 
 ul, ol { padding: 0 2.2em; }
 
-ul li, ol li { padding: .5em }
+ul li, ol li { padding: .25em;}
 
 ul li p, ol li p { padding: .5em 0;}
 
@@ -50,9 +50,8 @@ a:hover {
 /* headers */
 h1, h2, h3, h4, h5 {
 	font-family: 'Georgia', Serif;
-	color: #bc0000;
-	padding: 1em 0 .25em 0;	
-	text-shadow: 2px 2px black;
+	color: #bc0000;	
+	text-shadow: 1px 1px black;
 }
 h1 {
 	font-size: 3.6em; 
@@ -67,13 +66,12 @@ h3 {
 
 header #title,#subtitle {
 	text-align: center;
-	padding: .25em;
+	padding: .25em .25em 0;
 	position: relative;
 	top: 20%;
 }
 
 header #subtitle {
-	padding: 0 0 2em 0;
 }
 
 /* header search */
@@ -194,7 +192,7 @@ footer {
 	/* Automagically-generated pages */
 #nav {
 	height: 1em;
-	width: 100%;
+	width: ato;
 	background-color: #222;
 	text-align: left;
 	padding: .8em .5em .8em;
@@ -259,8 +257,8 @@ footer {
 #wrap {
 	min-height: 100%;
 	width: 900px;	
-	margin: 1em auto 0;
-	padding: 2em 1em;
+	margin: 0 auto;
+	padding: 1em;
 	text-align: left;
 	background-color: #111;		
 }
@@ -276,11 +274,10 @@ footer {
 
 #content-header {
 	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(./square_wallpaper_pattern_bw.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	/* height: 200px; */
-	background-size: cover;
-	padding: 2em 0;
+	background-position: top left;
+	background-repeat: repeat;
+	background-size: 500px;
+	padding: 0 0 1em;
 }
 
 #content-body {
@@ -292,7 +289,6 @@ footer {
 	/* Refboxes TODO: What SHOULD these be called, anyway?*/
 .refbox {
 	margin: 1em .5em;
-	padding: 1em;
 	background-color: #333;
 	text-align: center;
 	box-shadow: 0 0 .5em rgba(0,0,0,50);
@@ -301,8 +297,6 @@ footer {
 .refbox-header {
 	padding: .5em;
 	background-color: #222;
-	box-shadow: 0 0 .25em rgba(0,0,0,50);
-	margin: 0 0 .5em;
 }
 
 .refbox-header-title {
@@ -315,7 +309,7 @@ footer {
 }
 
 .refbox-content {
-	padding: 1em .5em;
+	padding: 1em;
 	text-align: left;
 }
 

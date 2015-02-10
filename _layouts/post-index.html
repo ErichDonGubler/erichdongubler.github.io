@@ -19,8 +19,11 @@ stylesheets: [post-index]
                     <div class="refbox-subtitle">{{ post.subtitle }}</div>
                     <div class="refbox-header-details"><i class="icon-clock">{{ post.date | date: "%a, %d %b %Y" }}</i></div>
                 </div>
-                <div class="refbox-content">{{ post.excerpt | strip_html }}...</div>
-                <div class="latest-posts-item-link"><a href="{{post.url}}">Continue reading&raquo;</a></div>
+                <div class="refbox-content">
+                    {{ post.excerpt | strip_html }}...
+                    <div class="latest-posts-item-link"><a href="{{post.url}}">{{site.data.localization_post-index.[page.lang].continue}}&raquo;</a></div>
+                </div>
+                
             </div>
         {% endif %}
         {% if counter.size == MAX_LATEST_POSTS %}
