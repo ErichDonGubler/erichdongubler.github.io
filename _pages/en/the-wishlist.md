@@ -1,5 +1,4 @@
 ---
-layout: page
 name: wishlists
 permalink: "/wishlist/"
 
