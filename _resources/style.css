@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	font: 18px 'Georgia', Serif;
+	font: 15px 'Georgia', Serif;
 	color: #aeaeae; 
 	background: #222 no-repeat;
 	background-position: center center;
@@ -66,15 +66,12 @@ h3 {
 
 header #title,#subtitle {
 	text-align: center;
-	padding: .25em 0 0;
+	padding: .25em .25em 0;
 	position: relative;
 	top: 20%;
-	margin: auto;
-	width: 950px;
 }
 
 header #subtitle {
-    width: 500px;
 }
 
 /* header search */
@@ -107,10 +104,10 @@ code {
   	padding: 15px;
   	text-align: left;
   	display: block;
-  	overflow: auto;  
-  	font: 1em Monospace;
-  	/* white-space: pre; */
+  	overflow: auto;
+  	font: .75em Monospace;
   	background: #222;  
+  	box-shadow: 0 0 1em black;
 }
 pre > code {
   	display: block;
@@ -259,7 +256,7 @@ footer {
 
 #wrap {
 	min-height: 100%;
-	width: 700px;	
+	width: 900px;	
 	margin: 0 auto;
 	padding: 1em;
 	text-align: left;

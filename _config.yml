@@ -31,7 +31,7 @@ defaults:
 # Pages
   -
     scope:
-      path: "_pages"
+      type: "pages"
     values:
       layout: "page"
 # Posts

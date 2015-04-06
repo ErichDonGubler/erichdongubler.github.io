@@ -1,4 +1,5 @@
 ---
+layout: page
 name: wishlists
 permalink: "/lista-de-desejos/"
 
