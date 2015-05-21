@@ -19,6 +19,7 @@ en:
     blogging: "Blogging"
     spiritual: "Spiritual"
   hosting: "Proudly hosted by"
+  copyright: "/copyright/"
 pt:
   feeds:
     lang-name: "pt-br"
@@ -39,3 +40,4 @@ pt:
     blogueacao: "Blogueação"
     espiritual: "Espiritual"
   hosting: "Hospedado com orgulho por"
+  copyright: "/direitos-autorais/"
