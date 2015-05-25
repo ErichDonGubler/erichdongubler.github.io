@@ -1,6 +1,5 @@
 ---
 name: his-gifts-are-many
-
 category: espiritual
 
 title: "As Dádivas Dele São Muitas"

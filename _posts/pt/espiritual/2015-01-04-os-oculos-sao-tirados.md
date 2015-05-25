@@ -1,8 +1,8 @@
 ---
 
-category: espiritual
 tags: [faith, hope, missionary-work, goals, study]
 name: "the-glasses-are-off"
+category: espiritual
 
 title: "Os Óculos São Tirados"
 subtitle: "...mas ainda tá escuro!"

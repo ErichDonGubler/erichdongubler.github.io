@@ -1,5 +1,6 @@
 ---
 name: balancing-the-rescue-and-homework
+category: espiritual
 
 title: Equilibrando o Resgate e a Faculdade
 ---

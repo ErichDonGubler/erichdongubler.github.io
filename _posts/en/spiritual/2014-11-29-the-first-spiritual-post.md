@@ -1,6 +1,5 @@
 ---
 name: "first-spiritual"
-
 category: spiritual
 tags: ["core documents", "obedience", "Thanksgiving", "family", "faith"]
 

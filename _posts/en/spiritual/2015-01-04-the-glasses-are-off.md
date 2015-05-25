@@ -1,9 +1,8 @@
 ---
 
-category: spiritual
 tags: [faith, hope, missionary-work, goals, study]
 name: "the-glasses-are-off"
-
+category: spiritual
 title: "The Glasses Are Off"
 subtitle: "...but it's still dark!"
 ---

@@ -1,6 +1,5 @@
 ---
 name: his-gifts-are-many
-
 category: spiritual
 ---
 Not much has come to mind as I have thought on this weekly post, which is strange - usually I have to think about what I must *omit* when I write a post.

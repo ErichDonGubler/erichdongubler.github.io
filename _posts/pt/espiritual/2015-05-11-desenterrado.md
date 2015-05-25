@@ -2,6 +2,7 @@
 title: Desenterrado!
 
 name: unburied-2015
+category: espiritual
 ---
 
 

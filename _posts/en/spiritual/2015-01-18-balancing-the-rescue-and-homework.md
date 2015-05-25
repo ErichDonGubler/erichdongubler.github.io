@@ -1,6 +1,6 @@
 ---
 name: balancing-the-rescue-and-homework
-
+category: spiritual
 title: Balancing the Rescue and Homework
 ---
 This week before last was an interesting set of adjustments.

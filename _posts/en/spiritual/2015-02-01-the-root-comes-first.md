@@ -1,6 +1,6 @@
 ---
 name: the-root-comes-first
-
+category: spiritual
 title: "The Root Comes First!"
 subtitle: "Thoughts about my roots"
 ---

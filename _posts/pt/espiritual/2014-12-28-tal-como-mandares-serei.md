@@ -1,6 +1,6 @@
 ---
-category: espiritual
 name: "i'll-be-what-you-want-me-to-be"
+category: espiritual
 
 subtitle: "Reflexões do ano 2014"
 ---

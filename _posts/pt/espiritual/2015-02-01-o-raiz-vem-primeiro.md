@@ -1,5 +1,6 @@
 ---
 name: the-root-comes-first
+category: espiritual
 
 title: "O Raíz Vem Primeiro!"
 subtitle: "Pensamentos sobre os meus raízes"

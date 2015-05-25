@@ -1,7 +1,6 @@
 ---
-category: spiritual
 name: "i'll-be-what-you-want-me-to-be"
-
+category: spiritual
 title: "I'll Be What You Want Me to Be"
 subtitle: "Reflections from 2014"
 ---
