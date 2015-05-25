@@ -29,16 +29,18 @@ stylesheets: [post]
 
 	    		{% assign found_this_post="false" %}
 	    		{% for post in site.posts %}
-	    			{% if found_this_post != "true" %}
-					    {% if post.name == page.name %}
-		    				{% assign found_this_post="true" %}
-		    				{% continue %}
+	    			{% if post.category == page.category %}
+		    			{% if found_this_post != "true" %}
+						    {% if post.name == page.name %}
+			    				{% assign found_this_post="true" %}
+			    				{% continue %}
+						    {% endif %}
+				    	{% else %}
+						    {% if post.name != page.name and post.lang == page.lang and post.category == page.category %}
+				    			{% assign previous_page=post %}
+				    			{% break %}
+				    		{% endif %}
 					    {% endif %}
-			    	{% else %}
-					    {% if post.name != page.name and post.lang == page.lang %}
-			    			{% assign previous_page=post %}
-			    			{% break %}
-			    		{% endif %}
 				    {% endif %}
 				{% endfor %}
 
@@ -53,7 +55,7 @@ stylesheets: [post]
 		    				{% continue %}
 					    {% endif %}
 			    	{% else %}
-					    {% if post.name != page.name and post.lang == page.lang %}
+					    {% if post.name != page.name and post.lang == page.lang and post.category == page.category %}
 			    			{% assign next_page=post %}
 			    			{% break %}
 			    		{% endif %}
@@ -61,7 +63,7 @@ stylesheets: [post]
 				{% endfor %}
 			    {% if next_page != empty or previous_page != empty %}
 			    	<div id="other-posts" class="refbox">
-				    	<h2 class="refbox-header">{{ site.data.localization_posts.[page.lang].other-posts }}</h2>
+				    	<h2 class="refbox-header">{{ site.data.localization_posts.[page.lang].other-posts }} {{ site.data.localization.[page.lang].categories.[page.category] }}</h2>
 					    <table>
 					    	{% if previous_page != empty %}
 						    	<td id="previous-post">
