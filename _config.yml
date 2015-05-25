@@ -21,6 +21,7 @@ kramdown:
   hard_wrap: false
 
 # Defaults for the blog content
+#   Make everything English-localized by default
 defaults:
   -
     scope:
@@ -35,13 +36,15 @@ defaults:
     values:
       layout: "page"
 # Posts
+# FIXME: Unfortunately, there's no way to specify a category here yet.
+#   EN (English)
   -
     scope:
       type: "posts"
     values:
       layout: "post"
 
-# PT (Portuguese)
+#   PT (Portuguese)
   -
     scope:
       type: "pages"
