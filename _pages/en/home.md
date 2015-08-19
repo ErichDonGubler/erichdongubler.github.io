@@ -6,13 +6,21 @@ title: Gubler's Landing
 subtitle: "This is my personal website. Feel free to browse around! See the links above for different sections of the site."
 
 redirect_from: "/index.html"
-stylesheets: [home]
+stylesheets: [home, timer]
+javascript: [timer]
 ---
-{% highlight d linenos %}
+
+Everybody, I'm engaged! :D Meet my fiancée, Paige!
+
+![Yes!](http://i.imgur.com/YB8K9wZ.jpg)
+
+{% include timer/countuntil.html date_string='October 15, 2015 14:00:00' id='time' %}
+
+<!-- {% highlight d linenos %}
 import std.stdio;
 
 void main()
 {
     writeln("Hello world!");
 }
-{% endhighlight %}
+{% endhighlight %} -->

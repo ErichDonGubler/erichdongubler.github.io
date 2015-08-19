@@ -1,0 +1,58 @@
+.timer-container {
+	width: 100%;
+}
+
+.timer {
+    font-size: 24px;
+
+	background: #222;
+	border-style: solid;
+	border-radius: .2em;
+	border-color: #222;
+	margin: 1em auto;
+	color: #bc0000;
+}
+
+.timer-separator:before {
+	content: ':';
+	font-size: 2em;
+}
+
+.timer-field {
+	background: #333;
+	border-style: solid;
+	border-radius: .2em;
+	border-color: #333;
+	display: inline-block;
+	/*width: 100%;*/
+	text-align: center;
+	padding: .25em
+}
+
+.timer-field-number {
+	font-size: 4em;
+}
+
+.timer-field-caption {
+	/*display: inline-block;*/
+	vertical-align: sub;
+	font-size: 1em;
+	/*margin: 0px auto;*/
+	/*width: 100%;*/
+}
+
+.timer-field-caption-days:before {
+	content: 'days';
+}
+
+.timer-field-caption-hours:before {
+	content: 'hours';
+}
+
+.timer-field-caption-minutes:before {
+	content: 'minutes';
+}
+
+.timer-field-caption-seconds:before {
+	content: 'seconds';
+}

@@ -3,10 +3,13 @@
     <head>
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.data.localization.[page.lang].site.name }}</title>
         <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="/_resources/style.css" type="text/css" />
-        <link rel="stylesheet" href="/_resources/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="/_resources/style/style.css" type="text/css" />
+        <link rel="stylesheet" href="/_resources/style/pygments.css" type="text/css" />
         {% for stylesheet in page.stylesheets %}
-          <link rel="stylesheet" href="/_resources/{{stylesheet}}.css" type="text/css" />
+          <link rel="stylesheet" href="/_resources/style/{{stylesheet}}.css" type="text/css" />
+        {% endfor %}
+        {% for file in page.javascript %}
+          <script type="text/javascript" src="/_resources/js/{{file}}.js"></script>
         {% endfor %}
         <link rel="stylesheet" href="/_resources/fontello/css/fontello.css" type="text/css" />
 
@@ -59,13 +62,13 @@
             <div id="places">
                 <table id="place-table">
                   <tr class="place-row">
-                    <td class="place-cell"><a href="https://www.linkedin.com/pub/erich-gubler/31/8ab/839"><img src="/_resources/linkedin.png" alt="LinkedIn"/></a></td>
+                    <td class="place-cell"><a href="https://www.linkedin.com/pub/erich-gubler/31/8ab/839"><img src="/_resources/img/linkedin.png" alt="LinkedIn"/></a></td>
                     <td class="place-column-spacer"></td>
-                    <td class="place-cell"><a href="https://github.com/ErichDonGubler"><img src="/_resources/github.png" alt="Github"/></a></td>
+                    <td class="place-cell"><a href="https://github.com/ErichDonGubler"><img src="/_resources/img/github.png" alt="Github"/></a></td>
                     <td class="place-column-spacer"></td>
-                    <td class="place-cell"><a href="https://www.facebook.com/erichdongubler"><img src="/_resources/facebook.png" alt="Facebook"/></a></td>
+                    <td class="place-cell"><a href="https://www.facebook.com/erichdongubler"><img src="/_resources/img/facebook.png" alt="Facebook"/></a></td>
                     <td class="place-column-spacer"></td>
-                    <td class="place-cell"><a href="https://plus.google.com/103900913328619682225"><img src="/_resources/googleplus.png" alt="Facebook"/></a></td>
+                    <td class="place-cell"><a href="https://plus.google.com/103900913328619682225"><img src="/_resources/img/googleplus.png" alt="Facebook"/></a></td>
                   </tr>
                 </table>
             </div>
