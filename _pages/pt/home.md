@@ -13,7 +13,7 @@ Gente, sou noivo! Conheça a minha noiva Paige!
 
 ![Yes!](http://i.imgur.com/YB8K9wZ.jpg)
 
-{% include timer/countuntil.html date_string='October 15, 2015 14:00:00' id='time' %}
+{% include timer/countuntil.html title='Tempo restando até o casamento' date_string='October 15, 2015 14:00:00' id='time' %}
 
 <!-- {% highlight d linenos %}
 import std.stdio;

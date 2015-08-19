@@ -67,13 +67,13 @@ function CountDownTimer(id, duration, config) {
 
       var addedField = false;
       var fieldStats = [
-        { name: 'days',    number: (secondsLeft / (60*60*24))   | 0},
-        { name: 'hours',   number: (secondsLeft / (60*60)) % 24 | 0},
-        { name: 'minutes', number: (secondsLeft / 60) % 60      | 0},
-        { name: 'seconds', number: (secondsLeft % 60)           | 0},
+        { name: 'days',    number: (secondsLeft / (60*60*24))   | 0, optional: true },
+        { name: 'hours',   number: (secondsLeft / (60*60)) % 24 | 0, optional: true },
+        { name: 'minutes', number: (secondsLeft / 60) % 60      | 0, optional: true },
+        { name: 'seconds', number: (secondsLeft % 60)           | 0, optional: false},
       ];
       fieldStats.forEach(function(field) {
-        if(self.removeEmptyNumbers && field.number === 0 && !addedField) {
+        if(self.removeEmptyNumbers && field.number === 0 && field.optional === true && !addedField) {
           return null;
         }
         var column = self.createNumberColumn(field.name, field.number);

@@ -1,15 +1,12 @@
+.timer-box {
+}
+
 .timer-container {
 	width: 100%;
 }
 
 .timer {
     font-size: 24px;
-
-	background: #222;
-	border-style: solid;
-	border-radius: .2em;
-	border-color: #222;
-	margin: 1em auto;
 	color: #bc0000;
 }
 
@@ -19,12 +16,11 @@
 }
 
 .timer-field {
-	background: #333;
+	background: #222;
 	border-style: solid;
 	border-radius: .2em;
-	border-color: #333;
+	border-color: #222;
 	display: inline-block;
-	/*width: 100%;*/
 	text-align: center;
 	padding: .25em
 }
@@ -34,11 +30,7 @@
 }
 
 .timer-field-caption {
-	/*display: inline-block;*/
-	vertical-align: sub;
 	font-size: 1em;
-	/*margin: 0px auto;*/
-	/*width: 100%;*/
 }
 
 .timer-field-caption-days:before {
