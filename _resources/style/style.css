@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	font: 16px 'Georgia', Serif;
+	font: 16px "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #aeaeae;
 	background-position: center center;
 	background-attachment: fixed;
@@ -18,7 +18,8 @@ body {
 }
 
 #page-content {
-	background-color: #000
+	background-color: #000;
+	min-width: 900px;
 }
 
 p, dl { 
@@ -48,7 +49,7 @@ a:hover {
 
 /* headers */
 h1, h2, h3, h4, h5 {
-	font-family: 'Georgia', Serif;
+	/* font-family: 'Georgia', Serif; */
 	color: #bc0000;	
 	text-shadow: 1px 1px black;
 }
@@ -66,10 +67,8 @@ h3 {
 header #title,#subtitle {
 	text-align: center;
 	padding: .25em 0 0;
-	position: relative;
 	top: 20%;
 	margin: auto;
-	width: 950px;
 }
 
 header #subtitle {
@@ -137,7 +136,7 @@ iframe { /* Almost certainly a video/media embed */
 blockquote {
 	margin: .5em;
  	padding: 1em;  
-   	background: #222 url(quote.png) no-repeat 1em 1em;
+   	background: #222 url(../img/quote.png) no-repeat 1em 1em;
 	background-size: 50px;
 	font-weight: normal;
 	font-style: italic;
@@ -159,7 +158,6 @@ blockquote .blockquote_source {
 /* Footer */
 
 footer {
-	height: 155px;
 	text-align: center;
 	padding: 2em .5em;
 }
@@ -193,12 +191,9 @@ footer {
 
 	/* Automagically-generated pages */
 #nav {
-	height: 1em;
-	width: ato;
 	background-color: #222;
 	text-align: left;
-	padding: .8em .5em .8em;
-	position: relative;
+	padding: .75em .5em 1em;
 }
 
 #nav-content {
@@ -265,7 +260,7 @@ footer {
 	background-color: #111;		
 }
 #content-wrap {
-	position: relative;
+	position: relative
 	clear: both;
 	padding: 2em; 		
 	margin-left: 5px;	
@@ -275,7 +270,7 @@ footer {
 }
 
 #content-header {
-	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(./square_wallpaper_pattern_bw.jpg);
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/square_wallpaper_pattern_bw.jpg);
 	background-position: top left;
 	background-repeat: repeat;
 	background-size: 500px;
@@ -357,4 +352,12 @@ table#place-table a {
 table#place-table td.place-column-spacer {
 	width: 10px;
 	background-color: transparent;
+}
+
+#places {
+    margin: auto;
+    background-color: #111;
+    width: 450px;
+    border: 1em #111 solid;
+    border-radius: 5px;
 }

@@ -1,18 +1,6 @@
-.timer-box {
-}
-
 .timer-container {
-	width: 100%;
-}
-
-.timer {
-    font-size: 24px;
-	color: #bc0000;
-}
-
-.timer-separator:before {
-	content: ':';
-	font-size: 2em;
+	display: flex;
+	align-items: center;
 }
 
 .timer-field {
@@ -22,29 +10,20 @@
 	border-color: #222;
 	display: inline-block;
 	text-align: center;
-	padding: .25em
+	padding: .25em;
+	flex: 20 0;
 }
 
 .timer-field-number {
-	font-size: 4em;
+	font-size: 6em;
 }
 
 .timer-field-caption {
 	font-size: 1em;
 }
 
-.timer-field-caption-days:before {
-	content: 'days';
-}
-
-.timer-field-caption-hours:before {
-	content: 'hours';
-}
-
-.timer-field-caption-minutes:before {
-	content: 'minutes';
-}
-
-.timer-field-caption-seconds:before {
-	content: 'seconds';
+.timer-separator {
+    flex: 3;
+    text-align: center;
+    font-size: 3em;
 }
