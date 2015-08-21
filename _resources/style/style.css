@@ -310,54 +310,44 @@ footer {
 	text-align: left;
 }
 
-/* "Places" icons */
-table#place-table {
-	width: 445px;
-	text-align: center;
-	margin: 2em auto;
-}
 
-table#place-table  tr.place-row {
-	width: 100%;
-}
+/* Footer stuff */
 
-table#place-table  tr.place-row-spacer {
-	height: 10px;
-	background-color: transparent;
-}
-
-table#place-table td.place-cell {
-	width: 100px;
-	height: 100px;
-	background-color: #333;
-	border-width: 10px;
-	border-radius: 5px;
-}
-
-table#place-table td.place-cell:hover {
-	background-color: #777;
-}
-
-table#place-table td img {
-	display: block;
-	max-width: 80px;
-	padding: 10px;
-	vertical-align: middle;
-}
-
-table#place-table a {
-	display: block;
-}
-
-table#place-table td.place-column-spacer {
-	width: 10px;
-	background-color: transparent;
-}
-
-#places {
+#footer-info {
     margin: auto;
     background-color: #111;
     width: 450px;
     border: 1em #111 solid;
     border-radius: 5px;
+	width: 445px;
+	text-align: center;
+	margin: 2em auto;
+}
+
+/* "Places" icons */
+
+#places {
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+.place-cell {
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	border-width: 10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.place-cell:hover {
+	background-color: #777;
+}
+
+.place-cell img {
+	display: block;
+	padding: 10%;
+	vertical-align: middle;
+	max-width: 80%;
 }
