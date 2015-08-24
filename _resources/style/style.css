@@ -49,7 +49,6 @@ a:hover {
 
 /* headers */
 h1, h2, h3, h4, h5 {
-	/* font-family: 'Georgia', Serif; */
 	color: #bc0000;	
 	text-shadow: 1px 1px black;
 }
@@ -160,6 +159,7 @@ blockquote .blockquote_source {
 footer {
 	text-align: center;
 	padding: 2em .5em;
+	display: flex;
 }
 
 
@@ -314,12 +314,9 @@ footer {
 /* Footer stuff */
 
 #footer-info {
-    margin: auto;
-    background-color: #111;
-    width: 450px;
-    border: 1em #111 solid;
-    border-radius: 5px;
-	width: 445px;
+	background-color: #111;
+	border: 1em #111 solid;
+	border-radius: 5px;
 	text-align: center;
 	margin: 2em auto;
 }
