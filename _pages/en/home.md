@@ -10,11 +10,11 @@ stylesheets: [home, timer]
 javascript: [timer]
 ---
 
-Everybody, I'm engaged! :D Meet my fiancée, Paige!
+I'm now a married man. I haven't had much time to update the blog because I've been making time for THIS lady:
 
-![Yes!](http://i.imgur.com/YB8K9wZ.jpg)
+![Yes!](http://i.imgur.com/1aUZAAB.jpg)
 
-{% include timer/countuntil.html title='Time until we get married' date_string='October 15, 2015 14:00:00' id='time' %}
+{% include timer/countuntil.html title='Time until our honeymoon' date_string='January 11, 2016 8:00:00' id='time' %}
 
 <!-- {% highlight d linenos %}
 import std.stdio;
