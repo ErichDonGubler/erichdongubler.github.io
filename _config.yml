@@ -13,8 +13,7 @@ permalink: pretty
 gems:
   - jekyll-redirect-from
 
-# Parsing config
-highlighter: pygments
+# Parsing config  
 markdown: kramdown
 kramdown:
   input: GFM
