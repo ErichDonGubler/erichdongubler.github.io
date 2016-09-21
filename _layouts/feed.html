@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- In case you hadn't noticed this isn't HTML - it's RSS. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.data.localization.[page.lang].site.name | xml_escape }}</title>
+		<description>{% if site.data.localization.[page.lang].site.description %}{{ site.data.localization.[page.lang].site.description | xml_escape }}{% endif %}</description>		
+		<link>{{ site.url }}{{ site.data.localization.[page.lang].pages.home.url }}</link>
+		<language>{{ site.data.localization.[page.lang].feeds.lang-name }}</language>
+		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
+		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+		{% assign captured_post_names=[content | split:'|'] %}
+		{% for post in site.posts %}
+			{% if captured_post_names contains post.name and post.lang == page.lang %}
+				<item>
+					<title>{{ post.title | xml_escape }}</title>
+					<description>{{ post.subtitle | xml_escape }}
+									{% if post.excerpt | strip_html %}
+										{{ post.excerpt | strip_html | xml_escape }}
+									{% endif %}
+					</description>
+					<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+					<link>{{ site.url }}{{ post.url }}</link>
+					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+				</item>
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>

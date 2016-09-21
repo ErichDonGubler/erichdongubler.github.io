@@ -1,0 +1,32 @@
+#post-info {
+	text-align: center;
+	width: auto;
+	color: #666;
+	font-style: italic;
+	margin: .5em;
+}
+
+#other-posts table {
+	width: 100%;
+}
+
+#other-posts table td#previous-post,
+#other-posts table td#next-post {
+	width: 50%;
+}
+
+#other-posts table td#previous-post h3,
+#other-posts table td#next-post h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#other-posts table td#previous-post {
+	text-align: center;
+	padding: 1em;
+}
+
+#other-posts table td#next-post {
+	text-align: center;
+	padding: 1em;
+}

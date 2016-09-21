@@ -1,0 +1,9 @@
+---
+layout: none
+---
+RewriteEngine on
+RewriteCond %{HTTP:Accept-Language} (en) [NC]
+RewriteRule .* http://erichdongubler.github.io/home/ [R,L]
+RewriteEngine on
+RewriteCond %{HTTP:Accept-Language} (pt) [NC]
+RewriteRule .* http://erichdongubler.github.io/inicio/ [R,L]

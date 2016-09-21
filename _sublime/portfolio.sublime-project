@@ -1,0 +1,34 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".."
+		}
+	],
+	"build_systems":
+	[
+		{
+	        "name": "Run Jekyll",
+	        "working_dir": "$project_path/..",
+	        "shell_cmd": "gnome-terminal -e 'bash --login -c \"bundler exec jekyll serve\"'",
+	        "windows":
+	        {
+	            "shell_cmd": "start jekyll serve"
+	        }
+		}
+	],
+	"syntax_override":
+	{
+        "\\.html$": [ "Jekyll", "Syntaxes", "HTML (Jekyll)" ]
+        ,"\\.md$": [ "Jekyll", "Syntaxes", "Markdown (Jekyll)" ]
+  	},
+	"settings":
+	{
+	  "Jekyll":
+	  {
+	      "posts_path": "../_posts",
+	      "drafts_path": "../_drafts",
+	  }
+	}
+}

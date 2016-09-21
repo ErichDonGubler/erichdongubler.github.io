@@ -1,0 +1,38 @@
+#mc_embed_signup div.mc-field-group {
+	margin: 1em 0;
+	width: 100%;
+	text-align: left;
+}
+
+#mc_embed_signup div.mc-field-group label {
+}
+
+input[type="text"], input[type="email"] {
+	margin: 1em;
+	width: 95%;
+	display: block;
+	padding: .5em;
+	border-radius: .5em;
+
+}
+
+input.button {
+	margin: 0 auto;
+	border: 1em;
+	border-radius: .5em;
+	padding: .5em;
+	width: 20%;
+	display: block;
+}
+
+input.button:hover {
+	background: #999;
+}
+
+.indicates-required {
+	text-align: center;
+}
+
+.asterisk {
+	color: orange;
+}

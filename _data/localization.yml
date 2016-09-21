@@ -1,0 +1,43 @@
+# Localization
+en:
+  feeds:
+    lang-name: "en-us"
+  site:
+    name: "Gubler's Portfolio"
+    description: "Erich Don Gubler's professional software portfolio"
+  pages:
+    home:
+      name: "Home"
+      url: "/home/"
+    about:
+      name: "About"
+      url: "/about/"
+    post-index:
+      name: "Posts"
+      url: "/posts/"
+  categories:
+    blogging: "Blogging"
+    spiritual: "Spiritual"
+  hosting: "Proudly hosted by"
+  copyright: "/copyright/"
+pt:
+  feeds:
+    lang-name: "pt-br"
+  site:
+    name: "O Portfólio do Gubler"
+    description: "O Portfólio profissional de software do Erich Don Gubler"
+  pages:
+    home:
+      name: "Início"
+      url: "/inicio/"
+    about:
+      name: "Sobre"
+      url: "/sobre/"
+    post-index:
+      name: "Postagens"
+      url: "/postagens/"
+  categories:
+    blogueacao: "Blogueação"
+    espiritual: "Espiritual"
+  hosting: "Hospedado com orgulho por"
+  copyright: "/direitos-autorais/"

@@ -1,0 +1,58 @@
+# Basic info
+name: Gubler's Landing
+description: This is my site!
+author: Erich Gubler
+author_email: erichdongubler@gmail.com
+url: http://erichdongubler.github.io
+
+# Excludes/includes
+exclude: [README.md]
+include: ["_pages", "_resources", ".htaccess"]
+
+permalink: pretty
+gems:
+  - jekyll-redirect-from
+
+# Parsing config  
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Defaults for the blog content
+#   Make everything English-localized by default
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+# Pages
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "page"
+# Posts
+# FIXME: Unfortunately, there's no way to specify a category here yet.
+#   EN (English)
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+#   PT (Portuguese)
+  -
+    scope:
+      type: "pages"
+      path: "_pages/pt"
+    values:
+      lang: "pt"
+  -
+    scope:
+      type: "posts"
+      path: "_posts/pt"
+    values:
+      lang: "pt"

@@ -1,0 +1,350 @@
+/* Top Elements */
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html {
+	background: #000;
+}
+
+body {
+	font: 16px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #aeaeae;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#page-content {
+	background-color: #000;
+	min-width: 900px;
+}
+
+p, dl { 
+	padding: .5em;
+	margin: 0;
+	line-height: 120%;
+}
+
+ul, ol { padding: 0 2.2em; }
+
+ul li, ol li { padding: .25em;}
+
+ul li p, ol li p { padding: .5em 0;}
+
+/* Links */
+a, a:active, a:link {
+	text-decoration: none;
+	color: #006193;			
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #438800;
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+	color: #bc0000;	
+	text-shadow: 1px 1px black;
+}
+h1 {
+	font-size: 3.6em; 
+}
+h2 {
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+header #title,#subtitle {
+	text-align: center;
+	padding: .25em 0 0;
+	top: 20%;
+	margin: auto;
+}
+
+header #subtitle {
+    width: 500px;
+}
+
+/* header search */
+header form#quick-search {
+	position: absolute;
+	top: 50px; right: 0;
+	padding: 0; margin: 0;
+	border: none;
+	width: 262px; height: 30px;
+	background: url(header-search.jpg) no-repeat;	
+	z-index: 999999;
+}
+header form#quick-search p {
+	margin: 0; padding: 0;		
+}
+header form#quick-search .tbox {
+	margin: 2px 0 0 5px; 
+	width: 210px;
+	background: none;
+	border: none;
+}
+header form#quick-search label,
+header form#quick-search .btn {
+	display: none;	
+}
+
+code {
+
+  	margin: 5px 0;
+  	padding: 15px;
+  	text-align: left;
+  	display: block;
+  	overflow: auto;
+  	font: 16px Monospace;
+  	background: #222;  
+  	box-shadow: 0 0 1em black;
+}
+pre > code {
+  	display: block;
+}
+
+p > code {
+  	padding: 5px;
+  	display: inline;
+}
+
+p img {
+	display: block;
+	margin: auto;
+	box-shadow: 0 0 1em rgba(0,0,0,50);
+	max-width: 100%;
+}
+
+iframe { /* Almost certainly a video/media embed */
+	width: 640px;
+	display: block;
+	height: 480px;
+	margin: .5em auto;
+}
+
+blockquote {
+	margin: .5em;
+ 	padding: 1em;  
+   	background: #222 url(../img/quote.png) no-repeat 1em 1em;
+	background-size: 50px;
+	font-weight: normal;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;	
+	color: #808080;	
+	box-shadow: 0 0 1em rgba(0,0,0,50);
+}
+
+blockquote .blockquote_source:before {
+	content: "\2014";
+}
+
+blockquote .blockquote_source {
+	font-style: normal;
+	white-space: pre;
+	text-align: right;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	padding: 2em .5em;
+	display: flex;
+}
+
+
+/* search form */
+.searchform {
+	background-color: transparent;
+	border: none;	
+	margin: 0; padding: 20px 0 15px 8px;	
+	width: 270px;	
+}
+.searchform p { margin: 0; padding: 0 0 10px 0; }
+.searchform input.textbox { 
+	width: 185px;
+	height: 18px;
+	padding: 2px;	
+	vertical-align: top;
+}
+.searchform input.button { 
+	width: 60px;
+	height: 24px;
+	padding: 2px 5px;
+	vertical-align: top;
+}
+
+/* ------------------------------------------
+   LAYOUT
+------------------------------------------- */ 
+/*  Navigation  */
+
+	/* Automagically-generated pages */
+#nav {
+	background-color: #222;
+	text-align: left;
+	padding: .75em .5em 1em;
+}
+
+#nav-content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#nav-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nav-content ul li {
+	display: inline;
+}
+
+#nav-content ul li#home a {
+	color: #FFF;
+}
+
+#nav-content ul li a {
+	text-decoration: none;	
+	color: #999;
+	padding: 0 1em 0 0;
+}
+#nav-content ul li#current a {	
+	color: #FFF;	
+}
+
+#nav-content a:hover, 
+#nav-content a:active {
+	color: #FFF;
+	background: none;
+	border: none;
+	text-decoration: underline;
+}
+
+	/* Localization */
+
+#lang {
+	float: right;
+	padding: 0 1em 0 0;
+	list-style: none;
+	display: inline;
+}
+
+#lang a {
+	text-decoration: none;	
+	color: #999;	
+	padding: 0 0 0 1em;
+}
+
+#lang a#current {
+	color: #FFF;	
+}
+
+#wrap {
+	min-height: 100%;
+	width: 700px;	
+	margin: 0 auto;
+	padding: 1em;
+	text-align: left;
+	background-color: #111;		
+}
+#content-wrap {
+	position: relative
+	clear: both;
+	padding: 2em; 		
+	margin-left: 5px;	
+	background: transparent;
+	float: left;	
+	display: inline;
+}
+
+#content-header {
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/square_wallpaper_pattern_bw.jpg);
+	background-position: top left;
+	background-repeat: repeat;
+	background-size: 500px;
+	padding: 0 0 1em;
+}
+
+#content-body {
+	padding: 1em;
+}
+
+/* Inner page content */
+
+	/* Refboxes TODO: What SHOULD these be called, anyway?*/
+.refbox {
+	margin: 1em .5em;
+	background-color: #333;
+	text-align: center;
+	box-shadow: 0 0 .5em rgba(0,0,0,50);
+}
+
+.refbox-header {
+	padding: .5em;
+	background-color: #222;
+}
+
+.refbox-header-title {
+	padding: .25em;
+}
+
+.refbox-header-details {
+	margin: .5em;
+	color: #666;
+}
+
+.refbox-content {
+	padding: 1em;
+	text-align: left;
+}
+
+
+/* Footer stuff */
+
+#footer-info {
+	background-color: #111;
+	border: 1em #111 solid;
+	border-radius: 5px;
+	text-align: center;
+	margin: 2em auto;
+}
+
+/* "Places" icons */
+
+#places {
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+.place-cell {
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	border-width: 10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.place-cell:hover {
+	background-color: #777;
+}
+
+.place-cell img {
+	display: block;
+	padding: 10%;
+	vertical-align: middle;
+	max-width: 80%;
+}

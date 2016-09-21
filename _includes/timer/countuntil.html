@@ -1,0 +1,25 @@
+<script type="text/javascript">
+window.addEventListener("load", function() {
+  var wedding = new Date('{{ include.date_string }}');
+  var timer = new CountUntilTimer('{{ include.id }}', wedding, {
+  	useDoubleDigits: false,
+  	removeEmptyNumbers: true,
+  	separatorContent: ':',
+  	caption: {
+  		days: '{{ site.data.localization_timers.[page.lang].days }}',
+  		hours: '{{ site.data.localization_timers.[page.lang].hours }}',
+  		minutes: '{{ site.data.localization_timers.[page.lang].minutes }}',
+  		seconds: '{{ site.data.localization_timers.[page.lang].seconds }}',
+  	},
+  });
+  timer.start();
+}, false);
+</script>
+<div class="refbox">
+  <div class="refbox-header">
+    <h3 class="refbox-header-title">
+      {{ include.title }}
+    </h3>
+  </div>
+  <div id="{{ include.id }}" class="timer-container refbox-content">Loading timer!</div>
+</div>

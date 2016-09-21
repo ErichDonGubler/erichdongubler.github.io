@@ -1,0 +1,29 @@
+.timer-container {
+	display: flex;
+	align-items: center;
+}
+
+.timer-field {
+	background: #222;
+	border-style: solid;
+	border-radius: .2em;
+	border-color: #222;
+	display: inline-block;
+	text-align: center;
+	padding: .25em;
+	flex: 20 0;
+}
+
+.timer-field-number {
+	font-size: 6em;
+}
+
+.timer-field-caption {
+	font-size: 1em;
+}
+
+.timer-separator {
+    flex: 3;
+    text-align: center;
+    font-size: 3em;
+}
